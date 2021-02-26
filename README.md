@@ -3,6 +3,7 @@
 ## Test 1
 
 - Fork and clone this project locally
+- All code should be written in typescript
 - Install and integrate [React Navigation](https://reactnavigation.org/docs/getting-started)
 - Install and integrate [Lottie](https://docs.expo.io/versions/latest/sdk/lottie/)
 - Install and integrate [Moti](https://github.com/nandorojo/moti)
