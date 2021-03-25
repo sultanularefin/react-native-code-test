@@ -1,20 +1,5 @@
-
-
-1. npm i -g expo-cli
-
-1. taxi@taxi-HP-ProBook-4540s:~/Programs/react-native-code-test$ sudo yarn global add expo-cli
-
-2. https://reactnavigation.org/docs/getting-started/
-2. expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
-
-3.   "@react-native-firebase/app": "^11.1.2",
-    "@react-native-firebase/auth": "^11.1.2",
-
-
-
-## complete App.tsx file march 26::
-
 ```js
+
 
 import { StatusBar } from "expo-status-bar";
 import React from "react";
