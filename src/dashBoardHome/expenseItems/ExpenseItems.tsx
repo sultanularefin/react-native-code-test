@@ -20,9 +20,9 @@ import moment from 'moment';
 
 // import Video from 'react-native-video';
 
-import FTI from 'react-native-vector-icons/Feather';
+// import FTI from '@expo/vector-icons/Feather';
 
-
+import { Feather } from '@expo/vector-icons';
 
 import OneExpenseItem from './OneExpenseItem';
 

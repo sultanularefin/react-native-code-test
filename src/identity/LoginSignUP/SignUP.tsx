@@ -16,12 +16,15 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+
+// import Ionicons from '@expo/vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
+
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 import { MMKV } from 'react-native-mmkv';
 import NetInfo from '@react-native-community/netinfo';
 // import Snackbar from 'react-native-snackbar';
-import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar-component';
 import auth from '@react-native-firebase/auth';
 // import ConfirmEmailPage from 'identity/ConfirmEmailPage';
 

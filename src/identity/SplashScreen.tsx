@@ -14,10 +14,15 @@ import {
   Button,
   StyleSheet,
 } from 'react-native';
-import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar-component';
 // import Snackbar from 'react-native-snackbar-component';
 // import Snackbar from 'react-native-snackbar';
-import Ionicons from "react-native-vector-icons/Ionicons";
+
+// import Ionicons from "react-native-vector-icons/Ionicons";
+
+import { Ionicons } from '@expo/vector-icons';
+
+
 import DashBoardHome from "../dashBoardHome/DashBoardHome";
 import {CommonActions} from "@react-navigation/native";
 

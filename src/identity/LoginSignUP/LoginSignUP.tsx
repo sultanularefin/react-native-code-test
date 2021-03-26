@@ -11,9 +11,9 @@ import {
 
 // "habibi" mhmdarefin
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
-import Snackbar from 'react-native-snackbar';
+// import Ionicons from '@expo/vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons';
+// import Snackbar from 'react-native-snackbar';
 
 import SignUP from './SignUP';
 import Login from './Login';

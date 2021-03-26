@@ -18,17 +18,24 @@ import {
     Keyboard,
 } from 'react-native';
 
-// import EvilIcons from 'react-native-vector-icons/EvilIcons';
+// import EvilIcons from '@expo/vector-icons/EvilIcons';
 
 // import NetInfo from '@react-native-community/netinfo';
-import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar-component';
 // import Snackbar from 'react-native-snackbar';
 import ExpenseItems from './expenseItems/ExpenseItems';
 
-// import MTI from 'react-native-vector-icons/MaterialIcons';
-import FTI from 'react-native-vector-icons/Feather';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Entypo from 'react-native-vector-icons/Entypo';
+// import MTI from '@expo/vector-icons/MaterialIcons';
+
+import { Feather } from '@expo/vector-icons';
+
+import { Ionicons } from '@expo/vector-icons';
+
+import { Entypo } from '@expo/vector-icons';
+
+// import FTI from '@expo/vector-icons/Feather';
+// import Ionicons from '@expo/vector-icons/Ionicons';
+// import Entypo from '@expo/vector-icons/Entypo';
 
 import auth from '@react-native-firebase/auth';
 import firestore from '@react-native-firebase/firestore';

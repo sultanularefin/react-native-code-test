@@ -21,9 +21,9 @@ import {Picker} from '@react-native-picker/picker';
 
 import {NavigationRoute} from 'react-navigation';
 
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-
-import MTI from 'react-native-vector-icons/MaterialCommunityIcons';
+// import MTI from '@expo/vector-icons/MaterialCommunityIcons';
 
 import AddExpenseItemPage from "./AddExpenseItemPage";
 
@@ -179,7 +179,7 @@ const MoneyHeaderComponent: React.FC<Props> = props => {
 
 
 
-            <MTI name="plus-circle-outline" size={40} color="#8E8E93" />
+            <MaterialCommunityIcons name="plus-circle-outline" size={40} color="#8E8E93" />
 
         </View>
         </TouchableOpacity>
@@ -270,7 +270,7 @@ const MoneyHeaderComponent: React.FC<Props> = props => {
             alignItems: 'center',
             paddingBottom: 10,
           }}>
-          <MTI name="stack-overflow" size={40} color="#8E8E93" />
+          <MaterialCommunityIcons name="stack-overflow" size={40} color="#8E8E93" />
         </View>
       </View>
     );

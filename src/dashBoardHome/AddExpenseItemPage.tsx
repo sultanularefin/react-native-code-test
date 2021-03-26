@@ -23,12 +23,18 @@ import {
 
 
 import {Picker} from '@react-native-picker/picker';
-import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar-component';
 // import Snackbar from 'react-native-snackbar';
-import FTI from 'react-native-vector-icons/Feather';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Entypo from 'react-native-vector-icons/Entypo';
-import MTI from 'react-native-vector-icons/MaterialIcons';
+
+import { Feather } from '@expo/vector-icons';
+
+import { Ionicons} from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+// import FTI from '@expo/vector-icons/Feather';
+// import Ionicons from '@expo/vector-icons/Ionicons';
+// import Entypo from '@expo/vector-icons/Entypo';
+// import MTI from '@expo/vector-icons/MaterialIcons';
 import moment from 'moment';
 
 
@@ -602,7 +608,7 @@ const AddExpenseItemPage: React.FC<Props> = ({props,navigation}) => {
     }}
                                         onPress={increment}>
         <Text>
-            <FTI
+            <Feather
                 name='plus-circle'
                 size={25}
                 style={{ color: '#3B8489', top: '.8%' }}
@@ -627,7 +633,7 @@ const AddExpenseItemPage: React.FC<Props> = ({props,navigation}) => {
 
                           onPress={decrement}>
             <Text>
-                <FTI
+                <Feather
                     name='minus-circle'
                     size={25}
                     style={{ color: '#3B8489', top: '.8%' }}

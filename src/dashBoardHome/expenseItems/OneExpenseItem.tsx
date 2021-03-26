@@ -30,17 +30,23 @@ import {
 } from 'react-native-gesture-handler';
 
 // import Swipeable from "react-native-gesture-handler/Swipeable";
-import FTI from 'react-native-vector-icons/Feather';
+// import FTI from '@expo/vector-icons/Feather';
+
+import { Feather } from '@expo/vector-icons';
 import moment from 'moment';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
+// import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 // const defaultImage = require('./../../../assets/default-image_01.jpg');
 // const videoImage = require('./../../../assets/video-image.png');
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Octicons from 'react-native-vector-icons/Octicons';
-import Entypo from 'react-native-vector-icons/Entypo';
-import Snackbar from 'react-native-snackbar-component';
+import { Ionicons } from '@expo/vector-icons';
+import { Octicons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+// import Ionicons from '@expo/vector-icons/Ionicons';
+// import Octicons from '@expo/vector-icons/Octicons';
+// import Entypo from '@expo/vector-icons/Entypo';
+// import Snackbar from 'react-native-snackbar-component';
 // import Snackbar from 'react-native-snackbar';
 
 export interface Props {

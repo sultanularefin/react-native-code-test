@@ -2206,6 +2206,15 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
+"@types/expo__vector-icons@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@types/expo__vector-icons/-/expo__vector-icons-9.0.1.tgz#46a0a9701cb69e632a05b87aafa7b0f537919896"
+  integrity sha512-xcdtdQSojtUO0mSuVDCP01cyqAXhZCIMGN1jXuqfA6DbOIg5cIcIBLIC5vhiGP0vR5gdviSyIHgPf4NR2d3wOg==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+    "@types/react-native-vector-icons" "*"
+
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
@@ -2277,10 +2286,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native-snackbar-component@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@types/react-native-snackbar-component/-/react-native-snackbar-component-1.1.0.tgz#382a80427f7c549685b6e0ab3a8728a41a9b00f2"
-  integrity sha512-Ab8efW5C1pEk8c5gwbRBzkmJCNWHbp6Ck/BIoNCrXDZqxlYYvXqUtX7IgcSyUsEJqb3CUfp51RNIcuKjMN+vzA==
+"@types/react-native-vector-icons@*":
+  version "6.4.6"
+  resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.6.tgz#848e3b14572def56212cafbf5cb1254b445bfb41"
+  integrity sha512-lAyxNfMd5L1xZvXWsGcJmNegDf61TAp40uL6ashNNWj9W3IrDJO59L9+9inh0Y2MsEZpLTdxzVU8Unb4/0FQng==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
@@ -4271,6 +4280,13 @@ expo-status-bar@^1.0.3:
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.0.3.tgz#62b4d6145680abd43ba6ecfa465f835e88bf6263"
   integrity sha512-/Orgla1nkIrfswNHbuAOTbPVq0g3+GrhoQVk7MRafY2dwrFLgXhaPExS+eN2hpmzqPv2LG5cqAZDCQUAjmZYBQ==
 
+expo-vector-icons@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/expo-vector-icons/-/expo-vector-icons-10.0.1.tgz#1b0565961a58e8d3a4571cb76eec516fd7402562"
+  integrity sha512-71WogLm9icxguMFKNtKKhHBgAwJ4lLzh4iUh6YB35+yeCfR/vIHI+4K6RAxbJQ9tLtRdwyxD+UAU0wN7m44cAA==
+  dependencies:
+    lodash "^4.17.4"
+
 expo@^40.0.1:
   version "40.0.1"
   resolved "https://registry.yarnpkg.com/expo/-/expo-40.0.1.tgz#20ae9f9c787ba1662037094dfd6982380f2c0288"
@@ -6157,7 +6173,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.5.0, lodash@^4.6.0, lodash@^4.7.0:
+lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.5.0, lodash@^4.6.0, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -7571,13 +7587,6 @@ react-native-screens@~2.15.2:
   version "2.15.2"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.15.2.tgz#a449700e895b462937211ec72ed6f09652758f06"
   integrity sha512-CagNf2APXkVoRlF3Mugr264FbKbrBg9eXUkqhIPVeZB8EsdS8XPrnt99yj/pzmT+yJMBY0dGrjXT8+68WYh6YQ==
-
-react-native-snackbar-component@^1.1.11:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/react-native-snackbar-component/-/react-native-snackbar-component-1.1.11.tgz#58df1c49f6cf01c5197db1bbf527746cdd1216e0"
-  integrity sha512-DtSg1Bh2FO3B48CIKd2hMsAk3rO8M6bStf76+KY/KW4By+E+/lPO5Mv6zbX7WS/miohtl+yg3OKYne9U4aqKMg==
-  dependencies:
-    prop-types "^15.6.0"
 
 react-native-svg@12.1.0:
   version "12.1.0"
