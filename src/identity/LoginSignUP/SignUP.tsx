@@ -20,7 +20,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 import { MMKV } from 'react-native-mmkv';
 import NetInfo from '@react-native-community/netinfo';
-import Snackbar from 'react-native-snackbar';
+// import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
 import auth from '@react-native-firebase/auth';
 // import ConfirmEmailPage from 'identity/ConfirmEmailPage';
 
@@ -171,11 +172,13 @@ const SignUP: React.FC<Props> = ({ props, navigation }) => {
   const handleSignUP = () => {
     console.log('connectionStatusState: ', connectionStatusState);
     if (!connectionStatusState) {
-      Snackbar.show({
-        text: 'You are Offline!',
-        duration: Snackbar.LENGTH_LONG,
-        backgroundColor: 'red',
-      });
+
+      Alert.alert('You are Offline!');
+      // Snackbar.show({
+      //   text: 'You are Offline!',
+      //   duration: Snackbar.LENGTH_SHORT,
+      //   backgroundColor: 'red',
+      // });
       return navigation.navigate('LoginSignUP');
     }
 
@@ -254,20 +257,21 @@ const SignUP: React.FC<Props> = ({ props, navigation }) => {
 
             setLoadingState(false);
 
-            Snackbar.show({
-              text: error.message,
-              textColor: '#A39E9D',
-              // duration: Snackbar.LENGTH_LONG,
-              duration: Snackbar.LENGTH_INDEFINITE,
-              backgroundColor: '#FFFFFF',
-              action: {
-                text: 'close',
-                textColor: 'green',
-                onPress: () => {
-                  /* Do something. SIMPLY DISMISSED. */
-                },
-              },
-            });
+            Alert.alert('${error.message}');
+            // Snackbar.show({
+            //   text: error.message,
+            //   textColor: '#A39E9D',
+            //   // duration: Snackbar.LENGTH_LONG,
+            //   duration: Snackbar.LENGTH_INDEFINITE,
+            //   backgroundColor: '#FFFFFF',
+            //   action: {
+            //     text: 'close',
+            //     textColor: 'green',
+            //     onPress: () => {
+            //       /* Do something. SIMPLY DISMISSED. */
+            //     },
+            //   },
+            // });
             return navigation.navigate('AuthStack');
           }
         );

@@ -20,7 +20,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { MMKV } from 'react-native-mmkv';
 import NetInfo from '@react-native-community/netinfo';
-import Snackbar from 'react-native-snackbar';
+// import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
 import auth from '@react-native-firebase/auth';
 
 export interface Props {}
@@ -156,19 +157,21 @@ const Login: React.FC<Props> = ({ props, navigation }) => {
 
     console.log('connectionStatusState: ', connectionStatusState);
     if (!connectionStatusState) {
-     return Snackbar.show({
-        text: 'You are Offline!',
-        duration: Snackbar.LENGTH_SHORT,
-        numberOfLines: 1,
-        backgroundColor: 'gold',
-        action: {
-          text: 'close',
-          textColor: 'green',
-          onPress: () => {
-            Snackbar.dismiss();
-          },
-        },
-      });
+
+      return Alert.alert('You are Offline!');
+     // return Snackbar.show({
+     //    text: 'You are Offline!',
+     //    duration: Snackbar.LENGTH_SHORT,
+     //    numberOfLines: 1,
+     //    backgroundColor: 'gold',
+     //    action: {
+     //      text: 'close',
+     //      textColor: 'green',
+     //      onPress: () => {
+     //        Snackbar.dismiss();
+     //      },
+     //    },
+     //  });
 
 
       // return navigation.navigate('LoginSignUP');
@@ -255,20 +258,21 @@ const Login: React.FC<Props> = ({ props, navigation }) => {
 
             setLoadingState(false);
 
-            Snackbar.show({
-              text: error.message,
-              textColor: '#A39E9D',
-              // duration: Snackbar.LENGTH_LONG,
-              duration: Snackbar.LENGTH_INDEFINITE,
-              backgroundColor: '#FFFFFF',
-              action: {
-                text: 'close',
-                textColor: 'green',
-                onPress: () => {
-                  /* Do something. SIMPLY DISMISSED. */
-                },
-              },
-            });
+            Alert.alert('${error.message}');
+            // Snackbar.show({
+            //   text: error.message,
+            //   textColor: '#A39E9D',
+            //   // duration: Snackbar.LENGTH_LONG,
+            //   duration: Snackbar.LENGTH_INDEFINITE,
+            //   backgroundColor: '#FFFFFF',
+            //   action: {
+            //     text: 'close',
+            //     textColor: 'green',
+            //     onPress: () => {
+            //       /* Do something. SIMPLY DISMISSED. */
+            //     },
+            //   },
+            // });
 
             // return;
             return navigation.navigate('LoginSignUP');

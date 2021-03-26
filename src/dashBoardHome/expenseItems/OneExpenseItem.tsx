@@ -40,8 +40,8 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Entypo from 'react-native-vector-icons/Entypo';
-
-import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar';
 
 export interface Props {
   property2: {
@@ -282,23 +282,27 @@ const OneExpenseItem: React.FC<Props> = /*async */ props => {
       .then(responseJson => {
         const success = responseJson.message;
         if (success === 'Chat Message Deleted.') {
-          Snackbar.show({
-            text: 'Message Deleted Successfully.',
-            duration: Snackbar.LENGTH_LONG,
-            // numberOfLines: 2,
-          });
+
+          Alert.alert('Message Deleted Successfully.');
+
+
+          // Snackbar.show({
+          //   text: 'Message Deleted Successfully.',
+          //   duration: Snackbar.LENGTH_SHORT,
+          //   // numberOfLines: 2,
+          // });
 
           props.reload();
 
           // this.setState ({visible: false});
         } else {
-          // alert ('Sorry Try again');
+          Alert.alert ('Sorry Try again');
 
-          Snackbar.show({
-            text: 'Sorry Try again.',
-            duration: Snackbar.LENGTH_LONG,
-            // numberOfLines: 2,
-          });
+          // Snackbar.show({
+          //   text: 'Sorry Try again.',
+          //   duration: Snackbar.LENGTH_SHORT,
+          //   // numberOfLines: 2,
+          // });
           // this.props.navigation.navigate ('ChatMessage');
         }
       })

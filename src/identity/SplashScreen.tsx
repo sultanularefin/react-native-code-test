@@ -14,8 +14,9 @@ import {
   Button,
   StyleSheet,
 } from 'react-native';
-
-import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import DashBoardHome from "../dashBoardHome/DashBoardHome";
 import {CommonActions} from "@react-navigation/native";
@@ -49,11 +50,12 @@ const SplashScreen: React.FC<Props> = ({ props, navigation, route }) => {
 
 
         if (userObject === null) {
-          Snackbar.show({
-            text: 'Storage empyt, please login.',
-            duration: Snackbar.LENGTH_SHORT,
-            backgroundColor: 'orange',
-          });
+            Alert.alert('${Storage empyt, please login.}');
+          // Snackbar.show({
+          //   text: 'Storage empyt, please login.',
+          //   duration: Snackbar.LENGTH_SHORT,
+          //   backgroundColor: 'orange',
+          // });
 
 
 

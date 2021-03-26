@@ -23,8 +23,8 @@ import {
 
 
 import {Picker} from '@react-native-picker/picker';
-
-import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar';
 import FTI from 'react-native-vector-icons/Feather';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';

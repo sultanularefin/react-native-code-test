@@ -21,7 +21,8 @@ import {
 // import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
 // import NetInfo from '@react-native-community/netinfo';
-import Snackbar from 'react-native-snackbar';
+import Snackbar from 'react-native-snackbar-component';
+// import Snackbar from 'react-native-snackbar';
 import ExpenseItems from './expenseItems/ExpenseItems';
 
 // import MTI from 'react-native-vector-icons/MaterialIcons';
@@ -339,11 +340,14 @@ const DashBoardHome: React.FC<Props> = ({ props, navigation }) => {
         // console.log('searchStringState: ',searchStringState);
         console.log('connectionStatusState: ', connectionStatusState);
         if (!connectionStatusState) {
-            Snackbar.show({
-                text: 'You are Offline!',
-                duration: Snackbar.LENGTH_LONG,
-                backgroundColor: 'red',
-            });
+            Alert.alert('You are Offline!');
+
+
+            // Snackbar.show({
+            //     text: 'You are Offline!',
+            //     duration: Snackbar.LENGTH_SHORT,
+            //     backgroundColor: 'red',
+            // });
             return navigation.navigate('ItemListTab');
         } else {
             // console.log('searchStringState: ',searchStringState);
